@@ -23,9 +23,8 @@ Vue.use(BootstrapVue);
 Vue.use(VueScrollReveal, {
   class: 'v-scroll-reveal', // A CSS class applied to elements with the v-scroll-reveal directive; useful for animation overrides.
   duration: 1000,
-  delay: 200,
-  scale: 1.5,
-  distance: '50px',
+  scale: 1,
+  // distance: '10px',
 });
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 

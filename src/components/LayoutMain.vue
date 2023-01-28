@@ -4,7 +4,6 @@
         <!-- NAVBAR -->
         <b-navbar toggleable="lg" type="dark" variant="dark" fixed="top" class="ps-4 pe-4 p-2">
             <b-navbar-brand href="#">{{titulo ?? 'Henrique Rodrigues'}}</b-navbar-brand>
-
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav>
@@ -16,11 +15,8 @@
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>
-
         <!-- CONTEÚDO SLOT -->
         <slot/>
-
-        <!-- FOOTER -->
     </div>
 </template>
 
