@@ -21,10 +21,14 @@ import App from './App.vue';
 library.add(faWhatsapp, faTwitter, faLinkedinIn, faGithub);
 Vue.use(BootstrapVue);
 Vue.use(VueScrollReveal, {
-  class: 'v-scroll-reveal', // A CSS class applied to elements with the v-scroll-reveal directive; useful for animation overrides.
-  duration: 1000,
+  delay: 0,
+  distance: '0px',
+  duration: 600,
+  easing: 'cubic-bezier(0.5, 0, 0, 1)',
+  interval: 0,
+  opacity: 0,
+  origin: 'bottom',
   scale: 1,
-  // distance: '10px',
 });
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 

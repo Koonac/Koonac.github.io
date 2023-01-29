@@ -7,11 +7,11 @@
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav>
-                    <b-nav-item href="#inicio" class="px-2" active>Ínicio</b-nav-item>
-                    <b-nav-item href="#sobre" class="px-2">Sobre</b-nav-item>
-                    <b-nav-item href="#habilidades" class="px-2">Habilidades</b-nav-item>
-                    <b-nav-item href="#portifolio" class="px-2">Portifólio</b-nav-item>
-                    <b-nav-item href="#contato" class="px-2">Contato</b-nav-item>
+                    <b-nav-item href="#inicio" class="px-2" active>Home</b-nav-item>
+                    <b-nav-item href="#sobre" class="px-2">About me</b-nav-item>
+                    <b-nav-item href="#habilidades" class="px-2">Skills</b-nav-item>
+                    <b-nav-item href="#portifolio" class="px-2">Portfolio</b-nav-item>
+                    <b-nav-item href="#contato" class="px-2">Contact</b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>

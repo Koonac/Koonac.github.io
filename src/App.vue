@@ -11,10 +11,10 @@
             </b-col>
             <b-col md="7" lg="8" class="mt-3 mt-md-0 p-0">
               <h1 class="titulo" v-scroll-reveal.reset>
-                Olá, me chamo <span>Henrique Rodrigues</span> sou Desenvolvedor Web.
+                Hi, my name is <span>Henrique</span> i'm Web Developer.
               </h1>
               <div class="d-flex justify-content-between" v-scroll-reveal.reset="{delay: 200}">
-                <b-btn href="#contato" class="btnSocial shadow">Contato</b-btn>
+                <b-btn href="#contato" class="btnSocial shadow">Contact</b-btn>
                 <div>
                   <b-link class="px-2 socialIcons" href="https://api.whatsapp.com/send?phone=5514998617696&text=Olá, disponivel para um novo serviço ?" target="_blank">
                     <font-awesome-icon icon="fa-brands fa-whatsapp" size="3x" bounce/>
@@ -33,9 +33,9 @@
         <!-- DIV DA ABA "Sobre" -->
         <section id="sobre">
           <b-row class="p-4 text-center">
-            <h2 class="titulo-secundario" v-scroll-reveal.reset>Sobre</h2>
+            <h2 class="titulo-secundario" v-scroll-reveal.reset>About me</h2>
             <b-col md="7" lg="8" class="mt-3 mt-md-0 text-center" v-scroll-reveal.reset="{delay: 200}">
-              <h3>Ambicioso e amante da tecnologia, em busca de alavancar as habilidades em programação, criar soluções para automatizar e facilitar rotinas do dia a dia.</h3>
+              <h3>Ambitious and technology-loving, seeking to leverage programming skills to create solutions for automating and streamlining daily routines.</h3>
             </b-col>
             <b-col md="5" lg="4" v-scroll-reveal.reset="{delay: 250}">
               <img src="./assets/about.jpg" class="img-fluid rounded" alt="" srcset="">
@@ -45,7 +45,7 @@
         <!-- DIV DA ABA "Habilidades" -->
         <section id="habilidades">
           <b-row class="p-4 text-center">
-            <h2 class="titulo-secundario" v-scroll-reveal.reset>Habilidades</h2>
+            <h2 class="titulo-secundario" v-scroll-reveal.reset>Skills</h2>
             <b-col md="5" lg="4" v-scroll-reveal.reset>
               <img src="./assets/skills.jpg" class="img-fluid rounded" alt="" srcset="">
             </b-col>
@@ -85,31 +85,31 @@
         <section id="portifolio">
           <b-row class="p-4">
             <b-col class="text-center">
-              <h2 class="titulo-secundario" v-scroll-reveal.reset>Portifólio</h2>
+              <h2 class="titulo-secundario" v-scroll-reveal.reset>Portfolio</h2>
               <b-card-group v-scroll-reveal.reset>
                 <b-card title="InstaFake" img-src="http://www.inforpress.cv/wp-content/uploads/2020/05/empty.jpg" img-alt="Image" img-top>
                   <b-card-text>
-                    Uma cópia do instagram feito em php, com CRUD para posts e criação de usuário.
+                    A PHP-based Instagram clone with CRUD functionality for posts and user creation. Designed to deliver a user-friendly interface and seamless experience for managing social media content.
                   </b-card-text>
                   <b-card-footer footer-class="text-end">
-                    <b-btn href="https://github.com/Koonac/FakeInsta" class="btnSocial shadow" target="_blank">Ver</b-btn>
+                    <b-btn href="https://github.com/Koonac/FakeInsta" class="btnSocial shadow" target="_blank">View</b-btn>
                   </b-card-footer>
                 </b-card>
                 <b-card title="SolicardSys" img-src="https://user-images.githubusercontent.com/98482410/198423490-ac3f9582-a877-4259-a038-b1c9eed1c7fd.png" img-alt="Image" img-top>
                   <b-card-text>
-                    Sistema integrado com a pltaforma de pagamentos GalaxPay, o sistema captura dados do cliente cadastrado na plataforma integrada para impressão do cartão de cadastro, gera novos contratos, faz financeiro da empresa, também possui niveis de acesso.
+                    An integrated system with the GalaxPay payment platform, capturing customer data from the integrated platform for card printing, generating new contracts, managing company finances, and featuring access levels.
                   </b-card-text>
                   <b-card-footer footer-class="text-end">
-                    <b-btn href="https://github.com/Koonac/galaxPay-integration" class="btnSocial shadow"  target="_blank">Ver</b-btn>
+                    <b-btn href="https://github.com/Koonac/galaxPay-integration" class="btnSocial shadow"  target="_blank">View</b-btn>
                   </b-card-footer>
                 </b-card>
                 <b-card title="Loja E-Commerce" img-src="http://www.inforpress.cv/wp-content/uploads/2020/05/empty.jpg" img-alt="Image" img-top>
                   <b-card-text>
-                    Loja E-commerce com dashboard e vitrine de produtos disponiveis.
-                    Em andamento...
+                    An e-commerce store with a dashboard and product showcase.
+                    In progress...
                   </b-card-text>
                   <b-card-footer footer-class="text-end">
-                    <b-btn href="https://github.com/Koonac/galaxPay-integration" class="btnSocial shadow"  target="_blank">Ver</b-btn>
+                    <b-btn href="https://github.com/Koonac/galaxPay-integration" class="btnSocial shadow"  target="_blank">View</b-btn>
                   </b-card-footer>
                 </b-card>
               </b-card-group>
@@ -120,13 +120,13 @@
         <section id="contato">
           <b-row class="p-4" align-h="center">
             <b-col md="6" class="text-center">
-              <h2 class="titulo-secundario" v-scroll-reveal.reset>Contato</h2>
+              <h2 class="titulo-secundario" v-scroll-reveal.reset>Contact</h2>
               <b-form @submit="onSubmit" v-if="show">
                 <b-form-group id="" label="" label-for="input-2" class="my-2" v-scroll-reveal.reset>
                   <b-form-input
                     id="nome"
                     v-model="form.name"
-                    placeholder="Nome"
+                    placeholder="Name"
                     required
                   ></b-form-input>
                 </b-form-group>
@@ -149,7 +149,7 @@
                   required
                   ></b-form-textarea>
                 </b-form-group>
-                <b-button type="submit" class="btnSocial shadow my-2" v-scroll-reveal.reset>Enviar</b-button>
+                <b-button type="submit" class="btnSocial shadow my-2" v-scroll-reveal.reset>Send</b-button>
               </b-form>
             </b-col>
           </b-row>
