@@ -2,18 +2,18 @@
   <div id="app">
     <!-- IMPORTANDO LAYOUT DA PÁGINA -->
     <LayoutMain>
-      <b-container class="container pt-2" fluid>
+      <b-container class="container py-4" fluid>
         <!-- DIV DA ABA "Início" -->
         <section id="inicio">
           <b-row class="p-4">
-            <b-col md="5" lg="4" v-scroll-reveal.reset>
+            <b-col md="5" lg="4" v-scroll-reveal>
               <img src="./assets/eu-social.jpg" class="img-fluid rounded" alt="" srcset="">
             </b-col>
             <b-col md="7" lg="8" class="mt-3 mt-md-0 p-0">
-              <h1 class="titulo" v-scroll-reveal.reset>
+              <h1 class="titulo" v-scroll-reveal>
                 Hi, my name is <span>Henrique</span> i'm Web Developer.
               </h1>
-              <div class="d-flex justify-content-between" v-scroll-reveal.reset="{delay: 200}">
+              <div class="d-flex justify-content-between" v-scroll-reveal>
                 <b-btn href="#contato" class="btnSocial shadow">Contact</b-btn>
                 <div>
                   <b-link class="px-2 socialIcons" href="https://api.whatsapp.com/send?phone=5514998617696&text=Olá, disponivel para um novo serviço ?" target="_blank">
@@ -33,11 +33,11 @@
         <!-- DIV DA ABA "Sobre" -->
         <section id="sobre">
           <b-row class="p-4 text-center">
-            <h2 class="titulo-secundario" v-scroll-reveal.reset>About me</h2>
-            <b-col md="7" lg="8" class="mt-3 mt-md-0 text-center" v-scroll-reveal.reset="{delay: 200}">
+            <h2 class="titulo-secundario" v-scroll-reveal>About me</h2>
+            <b-col md="7" lg="8" class="mt-3 mt-md-0 text-center" v-scroll-reveal>
               <h3>Ambitious and technology-loving, seeking to leverage programming skills to create solutions for automating and streamlining daily routines.</h3>
             </b-col>
-            <b-col md="5" lg="4" v-scroll-reveal.reset="{delay: 250}">
+            <b-col md="5" lg="4" v-scroll-reveal>
               <img src="./assets/about.jpg" class="img-fluid rounded" alt="" srcset="">
             </b-col>
           </b-row>
@@ -45,38 +45,38 @@
         <!-- DIV DA ABA "Habilidades" -->
         <section id="habilidades">
           <b-row class="p-4 text-center">
-            <h2 class="titulo-secundario" v-scroll-reveal.reset>Skills</h2>
-            <b-col md="5" lg="4" v-scroll-reveal.reset>
+            <h2 class="titulo-secundario" v-scroll-reveal>Skills</h2>
+            <b-col md="5" lg="4" v-scroll-reveal>
               <img src="./assets/skills.jpg" class="img-fluid rounded" alt="" srcset="">
             </b-col>
             <b-col md="7" lg="8" class="mt-3 mt-md-0">
               <div class="text-start mt-2">
-                <h4 v-scroll-reveal.reset>PHP</h4>
-                <b-progress :value="88" variant="info" striped show-progress :animated="animate" class="mt-2" v-scroll-reveal.reset></b-progress>
+                <h4 v-scroll-reveal>PHP</h4>
+                <b-progress :value="88" variant="info" striped show-progress :animated="animate" class="mt-2" v-scroll-reveal></b-progress>
               </div>
               <div class="text-start mt-2">
-                <h4 v-scroll-reveal.reset>Laravel</h4>
-                <b-progress :value="62" variant="info" striped show-progress :animated="animate" class="mt-2" v-scroll-reveal.reset></b-progress>
+                <h4 v-scroll-reveal>Laravel</h4>
+                <b-progress :value="62" variant="info" striped show-progress :animated="animate" class="mt-2" v-scroll-reveal></b-progress>
               </div>
               <div class="text-start mt-2">
-                <h4 v-scroll-reveal.reset>JavaScript</h4>
-                <b-progress :value="75" variant="info" striped show-progress :animated="animate" class="mt-2" v-scroll-reveal.reset></b-progress>
+                <h4 v-scroll-reveal>JavaScript</h4>
+                <b-progress :value="75" variant="info" striped show-progress :animated="animate" class="mt-2" v-scroll-reveal></b-progress>
               </div>
               <div class="text-start mt-2">
-                <h4 v-scroll-reveal.reset>Vue.js</h4>
-                <b-progress :value="38" variant="info" striped show-progress :animated="animate" class="mt-2" v-scroll-reveal.reset></b-progress>
+                <h4 v-scroll-reveal>Vue.js</h4>
+                <b-progress :value="38" variant="info" striped show-progress :animated="animate" class="mt-2" v-scroll-reveal></b-progress>
               </div>
               <div class="text-start mt-2">
-                <h4 v-scroll-reveal.reset>React</h4>
-                <b-progress :value="24" variant="info" striped show-progress :animated="animate" class="mt-2" v-scroll-reveal.reset></b-progress>
+                <h4 v-scroll-reveal>React</h4>
+                <b-progress :value="24" variant="info" striped show-progress :animated="animate" class="mt-2" v-scroll-reveal></b-progress>
               </div>
               <div class="text-start mt-2">
-                <h4 v-scroll-reveal.reset>Next.js</h4>
-                <b-progress :value="22" variant="info" striped show-progress :animated="animate" class="mt-2" v-scroll-reveal.reset></b-progress>
+                <h4 v-scroll-reveal>Next.js</h4>
+                <b-progress :value="22" variant="info" striped show-progress :animated="animate" class="mt-2" v-scroll-reveal></b-progress>
               </div>
               <div class="text-start mt-2">
-                <h4 v-scroll-reveal.reset>MySql</h4>
-                <b-progress :value="65" variant="info" striped show-progress :animated="animate" class="mt-2" v-scroll-reveal.reset></b-progress>
+                <h4 v-scroll-reveal>MySql</h4>
+                <b-progress :value="65" variant="info" striped show-progress :animated="animate" class="mt-2" v-scroll-reveal></b-progress>
               </div>
             </b-col>
           </b-row>
@@ -85,9 +85,9 @@
         <section id="portifolio">
           <b-row class="p-4">
             <b-col class="text-center">
-              <h2 class="titulo-secundario" v-scroll-reveal.reset>Portfolio</h2>
-              <b-card-group v-scroll-reveal.reset>
-                <b-card title="InstaFake" img-src="http://www.inforpress.cv/wp-content/uploads/2020/05/empty.jpg" img-alt="Image" img-top>
+              <h2 class="titulo-secundario" v-scroll-reveal>Portfolio</h2>
+              <b-card-group>
+                <b-card title="InstaFake" img-src="http://www.inforpress.cv/wp-content/uploads/2020/05/empty.jpg" img-alt="Image" img-top v-scroll-reveal>
                   <b-card-text>
                     A PHP-based Instagram clone with CRUD functionality for posts and user creation. Designed to deliver a user-friendly interface and seamless experience for managing social media content.
                   </b-card-text>
@@ -95,7 +95,7 @@
                     <b-btn href="https://github.com/Koonac/FakeInsta" class="btnSocial shadow" target="_blank">View</b-btn>
                   </b-card-footer>
                 </b-card>
-                <b-card title="SolicardSys" img-src="https://user-images.githubusercontent.com/98482410/198423490-ac3f9582-a877-4259-a038-b1c9eed1c7fd.png" img-alt="Image" img-top>
+                <b-card title="SolicardSys" img-src="https://user-images.githubusercontent.com/98482410/198423490-ac3f9582-a877-4259-a038-b1c9eed1c7fd.png" img-alt="Image" img-top v-scroll-reveal>
                   <b-card-text>
                     An integrated system with the GalaxPay payment platform, capturing customer data from the integrated platform for card printing, generating new contracts, managing company finances, and featuring access levels.
                   </b-card-text>
@@ -103,13 +103,13 @@
                     <b-btn href="https://github.com/Koonac/galaxPay-integration" class="btnSocial shadow"  target="_blank">View</b-btn>
                   </b-card-footer>
                 </b-card>
-                <b-card title="Loja E-Commerce" img-src="http://www.inforpress.cv/wp-content/uploads/2020/05/empty.jpg" img-alt="Image" img-top>
+                <b-card title="Loja E-Commerce" img-src="http://www.inforpress.cv/wp-content/uploads/2020/05/empty.jpg" img-alt="Image" img-top v-scroll-reveal>
                   <b-card-text>
                     An e-commerce store with a dashboard and product showcase.
                     In progress...
                   </b-card-text>
                   <b-card-footer footer-class="text-end">
-                    <b-btn href="https://github.com/Koonac/galaxPay-integration" class="btnSocial shadow"  target="_blank">View</b-btn>
+                    <b-btn href="https://github.com/Koonac/ecommerce" class="btnSocial shadow"  target="_blank">View</b-btn>
                   </b-card-footer>
                 </b-card>
               </b-card-group>
@@ -120,37 +120,41 @@
         <section id="contato">
           <b-row class="p-4" align-h="center">
             <b-col md="6" class="text-center">
-              <h2 class="titulo-secundario" v-scroll-reveal.reset>Contact</h2>
-              <b-form @submit="onSubmit" v-if="show">
-                <b-form-group id="" label="" label-for="input-2" class="my-2" v-scroll-reveal.reset>
+              <h2 class="titulo-secundario" v-if="showForm" v-scroll-reveal>Contact</h2>
+              <b-form @submit.prevent="sendEmail" v-if="showForm">
+                <b-form-group id="" label="" label-for="name" class="my-2" v-scroll-reveal>
                   <b-form-input
-                    id="nome"
-                    v-model="form.name"
+                    id="name"
+                    name="name"
+                    v-model="name"
                     placeholder="Name"
                     required
                   ></b-form-input>
                 </b-form-group>
-                <b-form-group id="" label="" label-for="input-1" class="my-2" v-scroll-reveal.reset>
+                <b-form-group id="" label="" label-for="email" class="my-2" v-scroll-reveal>
                   <b-form-input
                       id="email"
-                      v-model="form.email"
+                      name="email"
+                      v-model="email"
                       type="email"
                       placeholder="E-mail"
                       required
                     ></b-form-input>
                 </b-form-group>
-                <b-form-group id="" label="" label-for="textarea" class="my-2" v-scroll-reveal.reset>
+                <b-form-group id="" label="" label-for="message" class="my-2" v-scroll-reveal>
                   <b-form-textarea
-                  id="textarea"
-                  v-model="text"
+                  id="message"
+                  name="message"
+                  v-model="message"
                   placeholder="Enter something..."
                   rows="3"
                   max-rows="6"
                   required
                   ></b-form-textarea>
                 </b-form-group>
-                <b-button type="submit" class="btnSocial shadow my-2" v-scroll-reveal.reset>Send</b-button>
+                <b-button type="submit" class="btnSocial shadow my-2" v-scroll-reveal><b-spinner v-if="showSpinner" small label="Spinning"></b-spinner> {{textBtnSend}}</b-button>
               </b-form>
+              <b-alert :show="!showForm" :variant="colorAlert" v-scroll-reveal>{{msgAlert}}</b-alert>
             </b-col>
           </b-row>
         </section>
@@ -160,7 +164,10 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue';
+// IMPORTANDO EMAIL JS
+import emailjs from 'emailjs-com';
+
+// IMPORTANDO COMPONENTE LAYOUT
 import LayoutMain from './components/LayoutMain.vue';
 
 export default {
@@ -181,18 +188,34 @@ export default {
   },
   data() {
     return {
-      form: {
-        email: '',
-        name: '',
-      },
-      show: true,
+      email: '',
+      name: '',
+      message: '',
       animate: true,
+      showForm: true,
+      colorAlert: 'success',
+      msgAlert: '',
+      textBtnSend: 'Send',
+      showSpinner: false,
     };
   },
   methods: {
-    onSubmit(event) {
-      event.preventDefault();
-      alert(JSON.stringify(this.form));
+    sendEmail(e) {
+      this.showSpinner = true;
+      this.textBtnSend = 'Sending...';
+      emailjs.sendForm('service_eurd5to', 'template_kwg513d', e.target, 'yzpczPyFCkstjj0bv')
+        .then(() => {
+          this.showForm = false;
+          this.msgAlert = 'E-mail enviado com sucesso !';
+        }, () => {
+          this.showForm = false;
+          this.colorAlert = 'danger';
+          this.msgAlert = 'Falha ao enviar o e-mail, tente novamente !';
+        });
+      // Reset form field
+      this.name = '';
+      this.email = '';
+      this.message = '';
     },
   },
 };
