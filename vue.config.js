@@ -2,4 +2,14 @@ const { defineConfig } = require('@vue/cli-service');
 
 module.exports = defineConfig({
   transpileDependencies: true,
+  lintOnSave: false,
+  pluginOptions: {
+    i18n: {
+      locale: 'en',
+      fallbackLocale: 'en',
+      localeDir: 'lang',
+      enableInSFC: false,
+      enableBridge: false,
+    },
+  },
 });

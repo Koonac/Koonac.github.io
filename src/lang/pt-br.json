@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Início",
+    "aboutMe": "Sobre mim",
+    "skills": "Habilidades",
+    "portfolio": "Portfólio",
+    "contact": "Contato"
+  },
+  "section": {
+    "home": {
+      "title": "Olá, meu nome é <span>{name}</span> eu sou desenvolvedor web.",
+      "contact": "Contact"
+    },
+    "aboutMe": {
+      "title": "Sobre mim",
+      "message": "Ambicioso e amante da tecnologia, busco alavancar minhas habilidades de programação e criar soluções para automatizar e agilizar suas rotinas diárias."
+    },
+    "skills": {
+      "title": "Habilidades",
+      "skill1": "PHP",
+      "skill2": "Laravel",
+      "skill3": "JavaScript",
+      "skill4": "Vue.js",
+      "skill5": "React",
+      "skill6": "Next.js",
+      "skill7": "MySql"
+    },
+    "portfolio": {
+      "title": "Portfólio",
+      "card1": "Um clone do Instagram baseado em PHP com funcionalidade CRUD para postagens e criação de usuários. Projetado para oferecer uma interface amigável e uma experiência perfeita para o gerenciamento de conteúdo de mídia social.",
+      "card2": "Um sistema integrado com a plataforma de pagamentos GalaxPay, captando os dados dos clientes da plataforma integrada para impressão de cartões, geração de novos contratos, gestão financeira da empresa e níveis de acesso.",
+      "card3": "Um E-commerce com painel de controle e exibição de produtos. <br> Em progresso...",
+      "btnView": "Ver"
+    },
+    "contact": {
+      "title": "Contato",
+      "form": {
+        "name": "Nome",
+        "email": "E-mail",
+        "message": "Escreva algo...",
+        "btnSend": "Enviar"
+      }
+    }
+  }
+}

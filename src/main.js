@@ -16,6 +16,7 @@ import {
 // SCROLL REVEAL
 import VueScrollReveal from 'vue-sreveal';
 import App from './App.vue';
+import i18n from './i18n';
 
 library.add(faWhatsapp, faTwitter, faLinkedinIn, faGithub);
 Vue.use(BootstrapVue);
@@ -31,5 +32,6 @@ Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;
 
 new Vue({
+  i18n,
   render: (h) => h(App),
 }).$mount('#app');

@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Home",
+    "aboutMe": "About me",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+    },
+  "section": {
+    "home": {
+      "title": "Hi, my name is <span>{name}</span> i'm Web Developer.",
+      "contact": "Contact"
+    },
+    "aboutMe": {
+      "title": "About me",
+      "message": "Ambitious and technology-loving, seeking to leverage programming skills to create solutions for automating and streamlining daily routines."
+    },
+    "skills": {
+      "title": "Skills",
+      "skill1": "PHP",
+      "skill2": "Laravel",
+      "skill3": "JavaScript",
+      "skill4": "Vue.js",
+      "skill5": "React",
+      "skill6": "Next.js",
+      "skill7": "MySql"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "card1": "A PHP-based Instagram clone with CRUD functionality for posts and user creation. Designed to deliver a user-friendly interface and seamless experience for managing social media content.",
+      "card2": "An integrated system with the GalaxPay payment platform, capturing customer data from the integrated platform for card printing, generating new contracts, managing company finances, and featuring access levels.",
+      "card3": "An e-commerce store with a dashboard and product showcase. <br> In progress...",
+      "btnView": "View"
+    },
+    "contact": {
+      "title": "Contact",
+      "form": {
+        "name": "Name",
+        "email": "E-mail",
+        "message": "Enter something...",
+        "btnSend": "Send"
+      }
+    }
+  }
+}
