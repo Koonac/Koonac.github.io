@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Início",
-    "aboutMe": "Sobre mim",
+    "aboutMe": "Sobre",
     "skills": "Habilidades",
     "portfolio": "Portfólio",
     "contact": "Contato"
@@ -38,7 +38,12 @@
         "name": "Nome",
         "email": "E-mail",
         "message": "Escreva algo...",
-        "btnSend": "Enviar"
+        "btnSend": "Enviar",
+        "btnSending": "Sending... "
+      },
+      "msgAlert": {
+        "successSendEmail": "E-mail enviado com sucesso !",
+        "errorSendEmail": "Falha ao enviar o e-mail, tente novamente !"
       }
     }
   }

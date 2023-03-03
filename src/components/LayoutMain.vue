@@ -13,10 +13,8 @@
                     <b-nav-item href="#portifolio" class="px-2">{{ $t("nav.portfolio") }}</b-nav-item>
                     <b-nav-item href="#contato" class="px-2">{{ $t("nav.contact") }}</b-nav-item>
                 </b-navbar-nav>
-                <b-navbar-nav align="right" class="ml-auto">
-                    <b-nav-item class="px-2" right>
-                        <LangSwitcher />
-                    </b-nav-item>
+                <b-navbar-nav class="w-100 pe-4" align="right">
+                    <LangSwitcher />
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>

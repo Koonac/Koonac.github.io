@@ -100,8 +100,8 @@
                     {{ $t("section.portfolio.card1") }}
                   </b-card-text>
                   <b-card-footer footer-class="text-end">
-                    <b-btn href="https://github.com/Koonac/FakeInsta" class="btnSocial shadow"
-                      target="_blank">{{ $t("section.portfolio.btnView") }}</b-btn>
+                    <b-btn href="https://github.com/Koonac/FakeInsta" class="btnSocial shadow" target="_blank">{{
+                      $t("section.portfolio.btnView") }}</b-btn>
                   </b-card-footer>
                 </b-card>
                 <b-card title="SolicardSys"
@@ -119,8 +119,8 @@
                   img-alt="Image" img-top v-scroll-reveal>
                   <b-card-text v-html='$t("section.portfolio.card3")' />
                   <b-card-footer footer-class="text-end">
-                    <b-btn href="https://github.com/Koonac/ecommerce" class="btnSocial shadow"
-                      target="_blank">{{ $t("section.portfolio.btnView") }}</b-btn>
+                    <b-btn href="https://github.com/Koonac/ecommerce" class="btnSocial shadow" target="_blank">{{
+                      $t("section.portfolio.btnView") }}</b-btn>
                   </b-card-footer>
                 </b-card>
               </b-card-group>
@@ -131,18 +131,16 @@
         <section id="contato">
           <b-row class="p-4" align-h="center">
             <b-col md="6" class="text-center">
-              <h2 class="titulo-secundario" v-if="showForm" v-scroll-reveal>{{$t("section.contact.title")}}</h2>
+              <h2 class="titulo-secundario" v-if="showForm" v-scroll-reveal>{{ $t("section.contact.title") }}</h2>
               <b-form @submit.prevent="sendEmail" v-if="showForm">
-                <b-form-group id="" label="" label-for="name" class="my-2" v-scroll-reveal>
-                  <b-form-input id="name" name="name" v-model="name" placeholder="Name" required></b-form-input>
+                <b-form-group label-for="name" class="my-2" v-scroll-reveal>
+                  <b-form-input id="name" name="name" v-model="name" type="text" :placeholder="$t('section.contact.form.name')" required></b-form-input>
                 </b-form-group>
-                <b-form-group id="" label="" label-for="email" class="my-2" v-scroll-reveal>
-                  <b-form-input id="email" name="email" v-model="email" type="email" placeholder="E-mail"
-                    required></b-form-input>
+                <b-form-group label-for="email" class="my-2" v-scroll-reveal>
+                  <b-form-input id="email" name="email" v-model="email" type="email" :placeholder="$t('section.contact.form.email')" required></b-form-input>
                 </b-form-group>
-                <b-form-group id="" label="" label-for="message" class="my-2" v-scroll-reveal>
-                  <b-form-textarea id="message" name="message" v-model="message" placeholder="Enter something..." rows="3"
-                    max-rows="6" required></b-form-textarea>
+                <b-form-group label-for="message" class="my-2" v-scroll-reveal>
+                  <b-form-textarea id="message" name="message" v-model="message" type="text" :placeholder="$t('section.contact.form.message')" rows="3" max-rows="6" required></b-form-textarea>
                 </b-form-group>
                 <b-button type="submit" class="btnSocial shadow my-2" v-scroll-reveal><b-spinner v-if="showSpinner" small
                     label="Spinning"></b-spinner> {{ textBtnSend }}</b-button>
@@ -162,6 +160,8 @@ import emailjs from 'emailjs-com';
 
 // IMPORTANDO COMPONENTE LAYOUT
 import LayoutMain from './components/LayoutMain.vue';
+import i18n from './i18n';
+
 
 export default {
   name: 'App',
@@ -188,22 +188,23 @@ export default {
       showForm: true,
       colorAlert: 'success',
       msgAlert: '',
-      textBtnSend: 'Send',
+      textBtnSend: i18n.t('section.contact.form.btnSend'),
       showSpinner: false,
     };
   },
   methods: {
     sendEmail(e) {
       this.showSpinner = true;
-      this.textBtnSend = 'Sending...';
+      this.textBtnSend = i18n.t('section.contact.form.btnSending');
       emailjs.sendForm('service_eurd5to', 'template_kwg513d', e.target, 'yzpczPyFCkstjj0bv')
         .then(() => {
           this.showForm = false;
-          this.msgAlert = 'E-mail enviado com sucesso !';
-        }, () => {
+          this.msgAlert = i18n.t('section.contact.msgAlert.successSendEmail');
+        }, (e) => {
           this.showForm = false;
           this.colorAlert = 'danger';
-          this.msgAlert = 'Falha ao enviar o e-mail, tente novamente !';
+          this.msgAlert = i18n.t('section.contact.msgAlert.errorSendEmail');
+          e.console.error()
         });
       // Reset form field
       this.name = '';
