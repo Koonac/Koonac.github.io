@@ -143,7 +143,7 @@
                   <b-form-textarea id="message" name="message" v-model="message" type="text" :placeholder="$t('section.contact.form.message')" rows="3" max-rows="6" required></b-form-textarea>
                 </b-form-group>
                 <b-button type="submit" class="btnSocial shadow my-2" v-scroll-reveal><b-spinner v-if="showSpinner" small
-                    label="Spinning"></b-spinner> {{ textBtnSend }}</b-button>
+                    label="Spinning"></b-spinner> {{ textBtnSend ?? $t('section.contact.form.btnSend')}}</b-button>
               </b-form>
               <b-alert :show="!showForm" :variant="colorAlert" v-scroll-reveal>{{ msgAlert }}</b-alert>
             </b-col>
@@ -162,7 +162,6 @@ import emailjs from 'emailjs-com';
 import LayoutMain from './components/LayoutMain.vue';
 import i18n from './i18n';
 
-
 export default {
   name: 'App',
   head: {
@@ -176,8 +175,7 @@ export default {
     ],
   },
   components: {
-    // HelloWorld,
-    LayoutMain,
+    LayoutMain
   },
   data() {
     return {
@@ -188,7 +186,7 @@ export default {
       showForm: true,
       colorAlert: 'success',
       msgAlert: '',
-      textBtnSend: i18n.t('section.contact.form.btnSend'),
+      textBtnSend: null,
       showSpinner: false,
     };
   },
